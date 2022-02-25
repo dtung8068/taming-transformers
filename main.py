@@ -3,6 +3,7 @@ from omegaconf import OmegaConf
 import numpy as np
 from PIL import Image
 import torch
+torch.cuda.empty_cache()
 import torchvision
 from torch.utils.data import random_split, DataLoader, Dataset
 import pytorch_lightning as pl
